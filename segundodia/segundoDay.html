@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>desafio day2</title>
+  <link rel="stylesheet" href="segundoDay.css">
+</head>
+
+<body onload='inicio()'>
+
+  <main id="app">
+
+    <section class=" modal-app modal-app-aberto">
+      <div id="modal-container">
+        <div id="modal-folha">
+          <form id="form-box">
+            <h2>Digite suas informaçoes</h2>
+
+            <label id="box-info-nome">Nome Completo:<input type="text" id="nome"></label>
+
+
+            <label id="box-info-idade">idade:<input type="number" id="idade"></label>
+
+            <span id="box-genero">Sexo:
+              <label for="masc">masculino: <input type="radio" name="sexo" id="masc" checked></label>
+              <label for='fem'>Feminino: <input type="radio" name="sexo" id="fem"></label></span>
+
+            <span id="box-linguagem">Qual linguagem voçê esta estudando:
+              <label for="js"><input type="radio" id='js' name='tec' checked>JavaScript</label>
+              <label for="php"><input type="radio" id='php' name='tec'>PHP</label>
+              <label for="java"><input type="radio" id="java" name='tec'>Java</label></span>
+
+            <span id="box-questao">Esta gostando desta linguagem ?
+              <label for="sim"><input id="sim" type="radio" name="marcar" checked>Sim</label>
+              <label for="nao"><input id="nao" type="radio" name="marcar">Não</label></span>
+              
+              <span id="alerta">Preencha suas informaçoes</span>
+          </form>
+          <button id='save' onclick="save()">Salve as informaçoes</button>
+        </div>
+      </div>
+    </section>
+    <section class="user-container">
+      
+      <div id="user-box" class="shadow">
+        
+        <div id="user-foto" class="foto-off">
+        </div>
+        <div class="user-info ">
+          <div id='printNome'></div>
+          <div id="printIdade"></div>
+          <div id="printGenero"></div>
+          <div id="printTec"></div>
+          <div id="printText"></div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="./segundoDay.js"></script>
+</body>
+
+</html>

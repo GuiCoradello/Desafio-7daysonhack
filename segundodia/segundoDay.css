@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100vh;
+}
+
+.modal-app {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+}
+
+.modal-app-aberto {
+  pointer-events: none;
+  opacity: 0;
+}
+
+#modal-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(72, 84, 5, 0.434);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-folha {
+  width: 500px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px black;
+  background-color: rgb(20, 212, 186);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% 20%;
+}
+
+#form-box {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(7, 1fr);
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+#form-box h2 {
+  text-align: center;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+#box-info-nome {
+  display: block;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+#idade {
+  width: 50px;
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+#box-genero {
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+}
+
+#box-linguagem {
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+}
+
+#box-questao {
+  grid-column: 1 / 3;
+  grid-row: 6 / 7;
+}
+
+#form-box input:focus {
+  box-shadow: 0 0 30px 10px rgb(210, 213, 33);
+}
+
+#alerta {
+  border-bottom: 1px solid rgba(235, 85, 85, 0.63);
+  grid-column: 1 / 3;
+  grid-row: 7 / 9;
+  text-align: center;
+  margin: 0 auto;
+  display: none;
+  padding: 2px;
+  color: red;
+}
+
+#save {
+  align-self: center;
+  height: 30px;
+}
+
+.user-container {
+  width: 100%;
+  height: 100vh;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.user-container-fechado {
+  pointer-events: none;
+  opacity: 0;
+}
+
+#user-box {
+  width: 500px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 40% 60%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.shadow {
+  box-shadow: 0 0 20px black;
+}
+
+.blue {
+  box-shadow: 0 0 40px rgba(56, 56, 231, 0.668);
+}
+
+.rosa {
+  box-shadow: 0 0 40px rgb(228, 136, 151);
+}
+
+#user-foto {
+  width: 200px;
+  height: 250px;
+  margin: auto;
+  grid-row: 1 / 2;
+  opacity: 1;
+}
+
+.foto-off {
+  background-image: url("./fotos/symbole-masculin-icone-l-utilisateur-gris.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+
+.foto-masc {
+  background-image: url("./fotos/transferir.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+
+.foto-fem {
+  background-image: url("./fotos/transferir\ \(1\).png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+
+.foto-fecha {
+  opacity: 0;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 10% 10% 10% 60%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  align-items: center;
+  font-size: 25px;
+  padding: 10px;
+}
+
+#printText {
+  align-self: start;
+  padding: 20px;
+  font-family: cursive;
+  border: 5px solid rgba(0, 0, 0, 0.101);
+  margin: auto;
+
+}
