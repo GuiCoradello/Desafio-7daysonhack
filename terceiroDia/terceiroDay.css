@@ -67,6 +67,9 @@ section h3 {
   grid-row: 1 / 2;
   font-size: 15px;
 }
+h3{
+  text-align: center;
+}
 
 .btn {
   width: 30px;
