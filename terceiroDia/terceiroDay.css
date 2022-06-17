@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+
+.plano {
+  width: 400px;
+  height: 600px;
+  border: 1px solid;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin: auto;
+}
+
+.plano h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#planoCarreira p {
+  border-bottom: 1px solid;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.questao {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin: 60px auto;
+}
+
+.questao h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 300px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: auto;
+  margin-bottom: 10px;
+  box-shadow: 0 0 20px red;
+}
+section h3{
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  font-size: 15px;
+}
+.btn {
+  width: 30px;
+  height: 20px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+  margin: auto;
+}
+
+.suma{
+  opacity: 0;
+}
+
+.tec {
+  opacity: 0;
+
+}
+.future {
+  opacity: 0;
+}
+.mais{
+  opacity: 0;
+}
+
+.checkA {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.checkB {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+.Front {
+  display: grid;
+}
+
+.Back {
+  display: grid;
+}
+
+
+.opacityFront {
+  display: none;
+}
+
+.opacityBack {
+  display: none;
+}
+
+.ajuste {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

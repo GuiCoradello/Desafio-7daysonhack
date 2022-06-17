@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 3 day</title>
+  <link rel="stylesheet" href="terceiroDay.css">
+</head>
+
+<body>
+  <main class="app">
+    <section  class="plano">
+      <h1>Plano de carreira</h1>
+      <div id="planoCarreira">
+       <div id="printDev"></div>
+       <div id="printArea"></div>
+       <div id="printTec"></div>
+       <div id="printMais" class="print suma">
+             <h3>tecnologias a serem estudadas</h3>
+       </div>
+      </div>
+    </section>
+
+    <section class="questao">
+      <h2>Construa seu plano de Carreira</h2>
+      <section class="box secDev ">
+        <h3>Qual area de atuacao pretende estudar</h3>
+        <label for="front" class="checkA">Desenvoldedor Front-end
+          <input type="radio" name="area" id="front" checked></label>
+        <label for="Back" class="checkB"> Desenvolvedor Back-end
+          <input type="radio" name="area" id="Back"></label>
+
+        <input type="button" value="OK" class="btn" onclick="Dev()">
+      </section>
+
+      <section class="box tec">
+            <h3> Qual tecnologia pretende estudar</h3>
+          <div class="Front opacityFront">
+            <label for="react" class="checkA">React
+              <input type="radio" name="tecFront" id="react"checked></label>
+
+            <label for="Vue" class="checkB">Vue
+              <input type="radio" name="tecFront" id="Vue" ></label>
+          </div>
+        
+       
+          <div class="Back opacityBack">
+            <label for="Java" class="checkA">Java
+              <input type="radio" name="tecBack" id="Java" ></label>
+
+            <label for="C#" class="checkB">C#
+              <input type="radio" name="tecBack" id="C#"></label>
+          
+        </div>
+        <input type="button" value="OK" class="btn"  onclick='tecnologia()'>
+      </section>
+
+      <section class="box future">
+        <h3>Pretende seguir qual carreira</h3>
+        <label for="especialista" class="checkA"><input type="radio" name="prof" id="especialista" checked>Especialista</label>
+        <label for="fullstack" class="checkB"><input type="radio" name="prof" id="fullstack">FullStack</label>
+        <input type="button" value="OK" class="btn" onclick="futuro()">
+      </section>
+
+
+      <section class=" box mais ajuste ">
+        <h3>Deseja incluir alguma Tecnologia : </h3>
+        <input type="text" id="mais-tec" >
+       <input type="button" value="incluir"  onclick="incluir()">
+      </section>
+    </section>
+  </main>
+  <script src="terceiroDay.js"></script>
+</body>
+
+</html>
