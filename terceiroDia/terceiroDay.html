@@ -11,15 +11,15 @@
 
 <body>
   <main class="app">
-    <section  class="plano">
+    <section class="plano">
       <h1>Plano de carreira</h1>
       <div id="planoCarreira">
-       <div id="printDev"></div>
-       <div id="printArea"></div>
-       <div id="printTec"></div>
-       <div id="printMais" class="print suma">
-             <h3>tecnologias a serem estudadas</h3>
-       </div>
+        <div id="printDev"></div>
+        <div id="printArea"></div>
+        <div id="printTec"></div>
+        <div id="printMais" class="print suma">
+          <h3>tecnologias a serem estudadas</h3>
+        </div>
       </div>
     </section>
 
@@ -36,30 +36,31 @@
       </section>
 
       <section class="box tec">
-            <h3> Qual tecnologia pretende estudar</h3>
-          <div class="Front opacityFront">
-            <label for="react" class="checkA">React
-              <input type="radio" name="tecFront" id="react"checked></label>
+        <h3> Qual tecnologia pretende estudar</h3>
+        <div class="Front opacityFront">
+          <label for="react" class="checkA">React
+            <input type="radio" name="tecFront" id="react" checked></label>
 
-            <label for="Vue" class="checkB">Vue
-              <input type="radio" name="tecFront" id="Vue" ></label>
-          </div>
-        
-       
-          <div class="Back opacityBack">
-            <label for="Java" class="checkA">Java
-              <input type="radio" name="tecBack" id="Java" ></label>
-
-            <label for="C#" class="checkB">C#
-              <input type="radio" name="tecBack" id="C#"></label>
-          
+          <label for="Vue" class="checkB">Vue
+            <input type="radio" name="tecFront" id="Vue"></label>
         </div>
-        <input type="button" value="OK" class="btn"  onclick='tecnologia()'>
+
+
+        <div class="Back opacityBack">
+          <label for="Java" class="checkA">Java
+            <input type="radio" name="tecBack" id="Java"></label>
+
+          <label for="C#" class="checkB">C#
+            <input type="radio" name="tecBack" id="C#"></label>
+
+        </div>
+        <input type="button" value="OK" class="btn" onclick='tecnologia()'>
       </section>
 
       <section class="box future">
         <h3>Pretende seguir qual carreira</h3>
-        <label for="especialista" class="checkA"><input type="radio" name="prof" id="especialista" checked>Especialista</label>
+        <label for="especialista" class="checkA"><input type="radio" name="prof" id="especialista"
+            checked>Especialista</label>
         <label for="fullstack" class="checkB"><input type="radio" name="prof" id="fullstack">FullStack</label>
         <input type="button" value="OK" class="btn" onclick="futuro()">
       </section>
@@ -67,8 +68,8 @@
 
       <section class=" box mais ajuste ">
         <h3>Deseja incluir alguma Tecnologia : </h3>
-        <input type="text" id="mais-tec" >
-       <input type="button" value="incluir"  onclick="incluir()">
+        <input type="text" id="mais-tec">
+        <input type="button" value="incluir" onclick="incluir()">
       </section>
     </section>
   </main>
