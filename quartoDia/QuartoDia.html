@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quartoDia.css">
+  <link rel="stylesheet" href="responsivo.css">
+  <title>4 dia Desafio</title>
+</head>
+
+<body>
+  <main class="app">
+    <img src="/7daysDesafio/quartoDia/robo-pensando.jpg" alt="" id='foto'>
+    <section class="jogo">
+      <h1>Adivinhe o numero que estou pensando!!!</h1>
+      <div class="display">
+        <label for="chute">1 ao 10 [!Voçê tem 3 tentativas]<input id="chute" type='number' class="botao "></label>
+      </div>
+
+      <div id="tenta" class="tentativas">
+      </div>
+      <div>
+        <input class="checar-btn" type="button" value="checar" onclick="checar()">
+      </div>
+    </section>
+    <div id="resut" class="resultado"></div>
+  </main>
+  <script src="quartoDia.js"></script>
+</body>
+
+</html>
