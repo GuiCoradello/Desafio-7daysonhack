@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Quinto Dia</title>
+  <link rel="stylesheet" href="quintoDia.css">
+</head>
+
+<body class="site">
+  <header class="cabecalho">
+    <section class="nav">
+      <div class="logo">
+        <img class="img-logo" src="./fotos/logo.jpg " alt=" Foto Super Mercado">
+      </div>
+      <div class="nav-Bar">
+        <a href="#" onclick="MostraFrutas()">Frutas</a>
+        <a href="#" onclick="MostraLaticinios()">Laticinios</a>
+        <a href="#" onclick="MostraDoces()">doces</a>
+        <a href="#" onclick="NaoPereciveis()">Não Pereciveis</a>
+      </div>
+    </section>
+  </header>
+  <main class="container">
+    <section id="carrinho">
+      <h2>Carrinho de compras</h2>
+      <div id="car-Frutas" class="divisoria">Frutas</div>
+      <div id="car-Laticinios" class="divisoria">Laticinios</div>
+      <div id="car-doces" class="divisoria">doces</div>
+      <div id="car-NaoPereciveis" class="divisoria">Não Pereciveis</div>
+    </section>
+    <section id="cardapio" class="container-Produtos">
+
+
+      <div id="box-diversos" class="box ">
+
+        <div id="frutas" class="box-Paper ">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto">
+                <img class="fotoAjust" src="./fotos/fotos frutas/acai.jpg" alt=" fruta acai">
+              </div>
+            </div>
+            <div class="box-Descricao">
+              <div id='nome' class="box-Nome">
+                <p class="nome-Produto"><strong>Acai</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 Bandeja com 500g</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="frutas" class="box-Paper  ">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto">
+                <img class="fotoAjust" src="./fotos/fotos frutas/jaca.jpg" alt=" fruta jaca">
+              </div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong>jaca</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 Bandeja com 500g</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="frutas" class="box-Paper ">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto">
+                <img class="fotoAjust" src="./fotos/fotos frutas/istockphoto-185284489-612x612.jpg" alt="Fruta laranja">
+              </div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong>Laranja</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 Bandeja com 500g</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="frutas" class="box-Paper ">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto">
+                <img class="fotoAjust" src="./fotos/fotos frutas/maca.jpg" alt=" Fruta Maça">
+              </div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong>Maça</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 Bandeja com 500g</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="frutas" class="box-Paper ">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto">
+                <img class="fotoAjust" src="./fotos/fotos frutas/melao.jpg" alt=" Fruta melao">
+              </div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong>Melao</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 Bandeja com 500g</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div id="laticinios" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/fotos laticinios/danone.jpg" alt="Danone"></div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong>Danone</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="laticinios" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/fotos laticinios/iogurte.jpg" alt="Iogurte"></div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong>Iogurte</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="laticinios" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/fotos laticinios/leiteCaixa.jpg"
+                  alt="Leite de caixa"></div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong> Leite de caixa</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="laticinios" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/fotos laticinios/queijo.jpg" alt=" queijo"></div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong>Queijo Fresco</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="laticinios" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/fotos laticinios/requeijao.jpg" alt="Requeijao">
+              </div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong> Requeijao</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div id="doces" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/fotos doces/achocolatado.jpg"
+                  alt=" achocolatado Galak"></div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong>Achocolatado Galak</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="doces" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/fotos doces/barraChoco.jpg"
+                  alt="Barra de chocolate Suflair"></div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong> Chocolate Suflair</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="doces" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/fotos doces/doceDeleite.jpg" alt="Doce de leite">
+              </div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong>Doce De leite</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="doces" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/fotos doces/nescau.jpg" alt=" achocolatado nescau">
+              </div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong>Nescau</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="doces" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/fotos doces/toddy.jpg" alt=" Achocolatado toddy">
+              </div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong>Toddy</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div id="nao-Perecivel" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/foto nao perecivel/oleo.jpg" alt="Garrafa de oleo">
+              </div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong> Oleo</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="nao-Perecivel" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/foto nao perecivel/jeijaoPreto.jpg"
+                  alt="saco de feijao Preto"></div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong> feijao Preto</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="nao-Perecivel" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/foto nao perecivel/feijao.jpg" alt="Saco de feijao">
+              </div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong> Feijao</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="nao-Perecivel" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/foto nao perecivel/farinhaTrigo.jpg"
+                  alt=" Farinha de trigo"></div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong>Farinha de trigo</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="nao-Perecivel" class="box-Paper">
+          <div class="box-Produtos">
+            <div class="box-Foto">
+              <div class="foto"><img class="fotoAjust" src="./fotos/foto nao perecivel/arroz.jpg" alt=" Saco de arroz">
+              </div>
+            </div>
+            <div class="box-Descricao">
+              <div class="box-Nome">
+                <p class="nome-Produto"><strong>Arroz branco</strong></p>
+              </div>
+              <div class="box-Preco">
+                <p class="preco-Produto">R$ 10,00 a Unidade</p>
+              </div>
+            </div>
+            <div class="box-Comprar">
+              <button class="botao-Comprar">COMPRAR</button>
+            </div>
+          </div>
+
+
+
+        </div>
+    </section>
+  </main>
+  <script src="./quintoDia.js"></script>
+</body>
+
+</html>
