@@ -92,10 +92,13 @@ function MostaTodosProdutos() {
 
 // funcões de compra 
 
-function Comprar(n){
-Carrinho.innerHTML += `<li class ='compras'>${n}</li>`
-  
+function Comprar(n) {
+  Carrinho.innerHTML += `<li class ='compras'>${n}</li>`
+
 }
 
 
-
+// proximas Funcionalidades
+//Quantidade de produtos no carrinho
+// somar o valor da compra
+// Melhorar layout
