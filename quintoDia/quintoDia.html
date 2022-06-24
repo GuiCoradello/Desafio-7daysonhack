@@ -21,17 +21,15 @@
         <a href="#" onclick="MostraLaticinios()">Laticinios</a>
         <a href="#" onclick="MostraDoces()">doces</a>
         <a href="#" onclick="MostraNaoPereciveis()">Não Pereciveis</a>
-        
+
       </div>
     </section>
   </header>
   <main class="container">
-    <section id="carrinho">
+    <section id="box-Carrinho" >
       <h2>Carrinho de compras</h2>
-      <div id="car-Frutas" class="divisoria">Frutas</div>
-      <div id="car-Laticinios" class="divisoria">Laticinios</div>
-      <div id="car-doces" class="divisoria">doces</div>
-      <div id="car-NaoPereciveis" class="divisoria">Não Pereciveis</div>
+      <div id="carrinho"></div>
+      
     </section>
     <section id="cardapio" class="container-Produtos">
 
@@ -54,7 +52,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Badeja 500g Acai')">COMPRAR</button>
+              <input type="number" min="0" id="quantidade" class="quantidade">
             </div>
           </div>
         </div>
@@ -76,7 +75,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Bandeja 500g Jaca')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -98,7 +98,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Bandeja 500g Laranja')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -120,7 +121,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Bandeja 500g Maça')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -142,7 +144,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Bandeja 500g Melão')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -166,7 +169,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Danone')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -186,7 +190,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Iogurte')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -207,7 +212,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Leite de Caixa')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -227,7 +233,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Queijo Fresco')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -248,7 +255,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Requeijao')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -265,14 +273,15 @@
             </div>
             <div class="box-Descricao">
               <div class="box-Nome">
-                <p class="nome-Produto"><strong>Achocolatado Galak</strong></p>
+                <p class="nome-Produto"><strong> Galak</strong></p>
               </div>
               <div class="box-Preco">
                 <p class="preco-Produto">R$ 10,00 a Unidade</p>
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Achocolatado Galak')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -293,7 +302,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Barra Suflair')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -314,7 +324,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Doce de leite')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -335,7 +346,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Achocolatado Nescau')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -356,7 +368,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Achocolatado Toddy')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -380,7 +393,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Oleo')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -401,7 +415,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Feijao Preto')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -415,14 +430,15 @@
             </div>
             <div class="box-Descricao">
               <div class="box-Nome">
-                <p class="nome-Produto"><strong> Feijao</strong></p>
+                <p class="nome-Produto"><strong> Feijao Carioca</strong></p>
               </div>
               <div class="box-Preco">
                 <p class="preco-Produto">R$ 10,00 a Unidade</p>
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Feijão Carioca')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -443,7 +459,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('farinha de trigo')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
         </div>
@@ -464,7 +481,8 @@
               </div>
             </div>
             <div class="box-Comprar">
-              <button class="botao-Comprar">COMPRAR</button>
+              <button class="botao-Comprar" onclick="Comprar('Arroz Branco')">COMPRAR</button>
+              <input type="number" min="0" class="quantidade">
             </div>
           </div>
 

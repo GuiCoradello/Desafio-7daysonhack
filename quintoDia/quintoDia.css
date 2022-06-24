@@ -60,17 +60,20 @@
   grid-template-columns: 250px calc(100% - 250px);
 }
 
-#carrinho {}
-
-#carrinho h2 {
+.compras{
   text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 15px;
+
 }
 
-.divisoria {
+#box-Carrinho h2 {
   text-align: center;
-  margin-bottom: 5px;
-  border-bottom: 1px solid;
+margin-bottom: 30px;
+
 }
+
 
 .container-Produtos {
   display: grid;
@@ -142,7 +145,10 @@
 }
 
 .box-Comprar {
-  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
 }
 
 .botao-Comprar {
@@ -159,6 +165,13 @@
 .botao-Comprar:hover {
   box-shadow: 0 0 20px green;
   cursor: pointer;
+}
+
+.quantidade{
+  width: 40px;
+  height: 35px;
+  margin: auto 0;
+
 }
 .suma{
   display: none;

@@ -35,7 +35,14 @@ const produtos = [f0001, f0002, f0003, f0004, f0005,
   l0001, l0002, l0003, l0004, l0005,
   d0001, d0002, d0003, d0004, d0005,
   nP0001, nP0002, nP0003, nP0004, nP0005]
-// funcoes de aplicacão
+// input de quantidade
+const seletorQuantidade = document.getElementById('quantidade')
+const quantidade = seletorQuantidade.value
+
+//Carrinho de compras
+const Carrinho = document.getElementById('carrinho');
+
+// funcoes de aplicacão [filtro]
 
 function Mostrafrutas() {
 
@@ -83,7 +90,12 @@ function MostaTodosProdutos() {
 
 }
 
+// funcões de compra 
 
+function Comprar(n){
+Carrinho.innerHTML += `<li class ='compras'>${n}</li>`
+  
+}
 
 
 
